@@ -1,0 +1,140 @@
+.main_title {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/master-slides-01.jpg) center/cover;
+    position: relative;
+    color: white;
+    text-align: center;
+
+    .title_content {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-family: 'Courgette', cursive;
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 80px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+}
+
+// BG PAGES
+.pages {
+    .title_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+            font-size: 50px;
+        }
+
+    }
+}
+
+.about {
+    background: url(../img/bg-title-page-03.jpg) center/cover;
+}
+
+.blog_page {
+    background: url(../img/bg-title-page-01.jpg) center/cover;
+}
+
+.contact {
+    background: url(../img/bg-title-page-02.jpg) center/cover;
+}
+
+// BURGER SIDE JS
+.sider {
+    position: fixed;
+    width: 390px;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+    top: 0;
+    right: -100vh;
+    text-align: center;
+    z-index: 999;
+
+    .cross {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    div {
+        padding-top: 25px;
+        transition: .3s all ease-in-out;
+
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            color: #222222;
+            line-height: 1.2;
+            text-transform: uppercase;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                color: #d61c22;
+                ;
+            }
+        }
+    }
+
+    .btn_black {
+        margin: 35px auto 25px;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+    }
+
+    .footer_gallery {
+
+        .slider {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            margin: 0 60px 50px;
+
+            img {
+                justify-self: center;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.sider.active {
+    right: 0;
+    z-index: 999;
+}
+
+// RESPONSIVE
+@media (max-width: 990px) {
+    .main_title {
+        .title_content {
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+}
