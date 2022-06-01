@@ -1,6 +1,6 @@
 # Pato
 
-Fictif project for a restaurant.
+Fictif project for a restaurant
 
 ✔️ Html - Sass - JS
 
